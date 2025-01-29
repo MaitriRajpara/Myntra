@@ -23,7 +23,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background:grey; */
   width: 94%;
   margin: 0 auto;
 }
@@ -75,11 +74,10 @@ nav {
 .nav-right div {
   margin: 0 12px;
   text-align: center;
-}
+} 
+
 .nav-right div p {
   font-size: 12px;
   font-weight: 500;
-  color: rgb(61, 60, 60);
-  /* margin-left: 5cap; */
-  /* text-align: center; */
+  color: rgb(61, 60, 60);  
 }
