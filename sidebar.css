@@ -1,22 +1,23 @@
+* {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", serif;
 }
 
 #ProductsParent {
-  width: 95%;
+  width: 96%;
   height: 100vh;
   margin: auto;
-  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
   margin-top: 5vh;
 }
 
 #ProductsParent div:nth-child(1) {
   color: #282c3f;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1;
 }
 
@@ -27,22 +28,21 @@ body {
 #ProductsParent div:nth-child(2) {
   color: #282c3f;
   font-size: 14px;
-  font-size: 16px;
+  gap: 2;
   font-weight: 500;
 }
 
 #ProductsParent div:nth-child(2) > span {
-  font-weight: 100;
+  font-weight: 300;
 }
-
-/* Select tag */
 
 #filterSelectBoxes {
   display: flex;
+  margin-top: 1cap;
 }
 
 .filterSelectBoxes {
-  margin: -10px;
+  margin: -20px;
   padding: 0;
 }
 
@@ -51,12 +51,10 @@ body {
   margin-top: 10px;
   font-size: 20px;
   font-weight: 700;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #ProductsParent .bundle {
-  color: #696969;
+  color: #565656;
   width: 10%;
   font-weight: 400;
   font-size: 14px;
@@ -65,9 +63,23 @@ body {
 #ProductsParent .bundle > select,
 #ProductsParent .country > select,
 #ProductsParent .size > select {
-  border: none;
+  outline: none;
+  border: 1px;
   padding: 10px;
+  border-radius: 20px;
   background-color: white;
+}
+
+#ProductsParent .bundle > select:hover {
+  background-color: #f1efef;
+}
+
+#ProductsParent .country > select:hover {
+  background-color: #f1efef;
+}
+
+#ProductsParent .size > select:hover {
+  background-color: #f1efef;
 }
 
 #ProductsParent .country {
@@ -85,7 +97,7 @@ body {
 }
 
 #ProductsParent .ProductSelectBy {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
 }
@@ -93,26 +105,28 @@ body {
 .ProductSelectBy select {
   padding: 9px 14px;
   font-size: 14px;
-  color: #282c3f;
+  color: #7f8082;
   width: 255px;
-  border-radius: 2px;
-  border: 1px solid lightgray;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid rgb(70, 71, 72);
   background-color: white;
 }
 
-/* filter */
+.ProductSelectBy select:hover {
+  background-color: #f1efef;
+}
 
 #ProductBlock {
   width: 100%;
   display: flex;
-  margin-top: 10px;
 }
 
 #ProductFilter {
   width: 20%;
   min-width: 200px;
-  border-top: 1px solid lightgray;
-  border-right: 1px solid lightgray;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
 }
 
 #brandFilter li {
@@ -125,17 +139,15 @@ body {
   margin-top: -20px;
   font-size: 14px;
   color: #282c3f;
-  font-family: sans-serif;
   min-height: 17px;
 }
-/* ul */
+
 #brandFilter #filterButtonBrand {
   padding-top: 10px;
 }
 
 #productGrid {
   width: 80%;
-  border-top: 1px solid lightgray;
 }
 
 #brandFilter #filterButtonDiscount {
@@ -155,7 +167,7 @@ body {
 }
 
 #productGridItems #outerDIv {
-  width: 100%;
+  width: 90%;
 }
 
 #productGridItems img {
@@ -163,6 +175,7 @@ body {
   margin-bottom: 0;
   padding: 0;
 }
+
 #products a {
   text-decoration: none;
 }
@@ -212,73 +225,105 @@ body {
   margin-left: 5px;
   font-size: 12px;
 }
+
 #products .discount {
-  color: #ff905a;
+  color: #f45272;
   font-weight: 400;
   font-size: 12px;
   margin-left: 5px;
 }
 
-/* .img_div {
-    position: relative;
-    justify-content: center;
-  }
-  
-  
-  #wishListDiv {
-    visibility: hidden;
-    width: 100%;
-    height: 60px;
-    background-color: white;
-    margin-bottom: -5px;
-    visibility: hidden;
-    border: none;
-    position: absolute;
-    bottom: 5px;
-    text-align: center;
-    align-items: center;
-    vertical-align: middle;
-    justify-content: center;
-    z-index: 5;
-    color: lightgray;
-    border: 1px solid lightgray;
-  }
-  
-  #wishListBtn {
-    border: 1px solid lightgray;
-    text-align: center;
-    align-items: center;
-    vertical-align: middle;
-    justify-content: center;
-    width: 85%;
-    border-radius: 2px;
-    border: 1px solid #d4d5d9;
-    color: #282c3f;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 500;
-    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-      Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    margin-top: 10px;
-  }
-  #wishListBtn span {
-    text-align: center;
-    align-items: center;
-    vertical-align: middle;
-    justify-content: center;
-    margin: 0px;
-    padding: 0px;
-    font-weight: 500;
-    font-size: 15px;
-    padding: 10px;
-  }
-  
-  .wishbtn > :nth-child(2) {
-    font-size: 17px;
-  } */
+#side-nav #color {
+  width: 260px;
+  height: 315px;
+}
 
-.bundle :hover {
-  border-radius: 2cap;
+#side-nav #color #color-text {
+  height: 40px;
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.884);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 105px;
+  margin-top: 10px;
+}
+
+#side-nav #color #color-image {
+  height: 15px;
+  width: 15px;
+  margin-right: -15px;
+}
+
+#color #color-content {
+  height: 243px;
+  width: 260px;
+}
+
+#color #color-content #container {
+  margin-top: 1px;
+  height: 28px;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.815);
+}
+
+#color #color-content #container input {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  accent-color: rgb(244, 78, 105);
+}
+
+#color #color-content #container div {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+}
+
+#color #color-content #container #yellow {
+  background-color: yellow;
+}
+
+#color #color-content #container #pink {
+  background-color: pink;
+}
+
+#color #color-content #container #black {
+  background-color: black;
+}
+
+#color #color-content #container #red {
+  background-color: red;
+}
+
+#color #color-content #container #orange {
+  background-color: orange;
+}
+
+#color #color-content #container #green {
+  background-color: green;
+}
+
+#color #color-content #container #blue {
+  background-color: blue;
+}
+
+#color {
+  margin-top: 30px;
+}
+
+#range {
+  margin-top: 10px;
+  color: #f45272;
+  font-size: 15px;
+  text-align: left;
+}
+
+.check-range {
+  border-bottom: 1px solid lightgray;
 }

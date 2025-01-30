@@ -1,213 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Styles/nav.css" />
-    <link rel="stylesheet" href="Styles/sidebar.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Online Store - Myntra</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="nav-left">
-          <img id="logo" src="Images/logo.jpeg" alt="logo" />
-          <ul class="nav-menu">
-            <li>MEN</li>
-            <li>WOMEN</li>
-            <li>KIDS</li>
-            <li>HOME & LIVING</li>
-            <li>BEAUTY</li>
-            <li class="studio">STUDIO <span>NEW </span></li>
-          </ul>
-        </div>
-        <div class="nav-right">
-          <div class="search-bar">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <input
-              type="text"
-              placeholder="Search for brands ,products and more"
-            />
-          </div>
 
-          <div>
-            <i class="fa-solid fa-user"></i>
-            <p>Profile</p>
-          </div>
-          <div>
-            <i class="fa-solid fa-heart"></i>
-            <p>Wishlist</p>
-          </div>
-          <div>
-            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-            <p>Bag</p>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div id="ProductsContainer">
-      <div id="ProductsParent">
-          <div>Home / ClothingMen / <span> T-Shirts</span></div>
-          <div>Kids T-Shirts <span>- 11944 items</span></div>
-          <div id="filterSelectBoxes">
-              <div class="fl">FILTERS</div>
-              <div class="bundle">
-                  <select>
-                      <option value="">Bundles</option>
-                      <option value="">Single Styles</option>
-                  </select>
-              </div>
-              <div class="country">
-                  <select>
-                      <option value="">Country Of Origin</option>
-                      <option value="">All Countries</option>
-                      <option value="">India</option>
-                  </select>
-              </div>
-              <div class="size">
-                  <select>
-                      <option value="">Size</option>
-                      <option value="">Small</option>
-                      <option value="">Medium</option>
-                      <option value="">Large</option>
-                  </select>
-              </div>
-              <div class="ProductSelectBy">
-                  <select name="sort" id="sortButton">
-                      <option value="">Sort by : Recommended</option>
-                      <option value="whatsNew">Whats New</option>
-                      <option value="popularity">Popularity</option>
-                      <option value="discount">Better Discount</option>
-                      <option value="desc">Price : High to Low</option>
-                      <option value="asc">Price : Low to High</option>
-                      <option value="rating">Customer Rating</option>
-                  </select>
-              </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <title>Online Store - Myntra</title>
+</head>
 
-          <div id="ProductBlock">
-              <div id="ProductFilter">
-                  <div id="brandFilter">
-                      <br /><br />
-                      <span class="filterspan">BRAND</span>
-                      <ul id="filterButtonBrand">
-                          <li>
-                              <input type="checkbox" class="bandfiltered" id="Roadster" value="Roadster"
-                                  name="Roadster" />
-                              <span>Roadster</span>
-                          </li>
-                          <li>
-                              <input type="checkbox" class="bandfiltered" id="WROGN" value="WROGN" name="WROGN" />
-                              <span> WROGN </span>
-                          </li>
-                          <li>
-                              <input type="checkbox" class="bandfiltered" id="HRX" value="HRX by Hrithik Roshan"
-                                  name="HRX by Hrithik Roshan" />
-                              <span> HRX by Hrithik Roshan </span>
-                          </li>
-                          <li>
-                              <input type="checkbox" class="bandfiltered" id="LouisPhilippeSport"
-                                  value="Louis Philippe Sport" name="Louis Philippe Sport" />
-                              <span> Adidas sport </span>
-                          </li>
-                          <li>
-                              <input type="checkbox" class="bandfiltered" id="Puma" value="Puma" name="Puma" />
-                              <span> Puma </span>
-                          </li>
-                          <li>
-                            <input type="checkbox" class="bandfiltered" id="Nike" value="Nike" name="Nike" />
-                            <span> Nike </span>
-                        </li>
-                        <li>
-                          <input type="checkbox" class="bandfiltered" id="Tommy" value="tommy" name="Tommy" />
-                          <span> Tommy Hilfiger </span>
-                      </li>
-                      </ul>
-                      <br />
-
-                      <span class="filterspan">PRICE</span>
-                      <ul id="filterButtonPrice">
-                          <li> <input type="checkbox" id="174-1881" value="174-1881" name="174-1881" /><span> Rs. 1500
-                                  to Rs. 2000 </span></li>
-                          <li>
-                              <input type="checkbox" id="1881-3588" value="1881-3588" name="1881-3588" /><span> Rs.
-                                  2000 to Rs. 3000 </span>
-                          </li>
-                          <li>
-                              <input type="checkbox" id="3588-5295" value="3588-5295" name="3588-5295" /><span> Rs.
-                                  3000 to Rs. 5000 </span>
-                          </li>
-                          <li>
-                              <input type="checkbox" id="5295-7002" value="5295-7002" name="5295-7002" />
-                              <span> Rs. 5000 to more </span>
-                          </li>
-                      </ul>
-                      <br>
-                      <span class="filterspan">DISCOUNT RANGE</span>
-                      <ul id="filterButtonDiscount">
-                          <li>
-                              <input type="radio" id="10" value="10" name="10" /><span> 10% and above </span>
-                          </li>
-                          <li>
-                              <input type="radio" id="20" value="20" name="10" /><span> 20% and above </span>
-                          </li>
-                          <li>
-                              <input type="radio" id="30" value="30" name="10" />
-                              <span> 30% and above </span>
-                          </li>
-                          <li>
-                              <input type="radio" id="40" value="40" name="10" />
-                              <span> 40% and above </span>
-                          </li>
-                          <li>
-                              <input type="radio" id="50" value="50" name="10" />
-                              <span> 50% and above </span>
-                          </li>
-                          <li>
-                              <input type="radio" id="60" value="60" name="10" />
-                              <span> 60% and above </span>
-                          </li>
-                          <li>
-                              <input type="radio" id="70" value="70" name="10" />
-                              <span> 70% and above </span>
-                          </li>
-                          <li>
-                              <input type="radio" id="80" value="80" name="10" />
-                              <span> 80% and above </span>
-                          </li>
-                          <li>
-                              <input type="radio" id="90" value="90" name="10" />
-                              <span> 90% and above </span>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <br /><br />
-
-              <div id="productGrid">
-                  <div id="productGridItems"></div>
-              </div>
-          </div>
-          <hr />
-          <div id="footerBlock"></div>
+<body>
+  <header>
+    <nav>
+      <div class="nav-left">
+        <img id="logo" src="Images/logo.jpeg" alt="logo" />
+        <ul class="nav-menu">
+          <li>MEN</li>
+          <li>WOMEN</li>
+          <li>KIDS</li>
+          <li>HOME & LIVING</li>
+          <li>BEAUTY</li>
+          <li class="studio">STUDIO <span>NEW </span></li>
+        </ul>
       </div>
-  </div>
+      <div class="nav-right">
+        <div class="search-bar">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" placeholder="Search for brands ,products and more" />
+        </div>
 
+        <div>
+          <i class="fa-solid fa-user"></i>
+          <p>Profile</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-heart"></i>
+          <p>Wishlist</p>
+        </div>
+        <div>
+          <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          <p>Bag</p>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="ProductsContainer">
+    <div id="ProductsParent">
+      <div>Home / ClothingMen / <span> T-Shirts</span></div>
+      <div>Kids Wear Online Store<span>- (11944 items)</span></div>
+      <div id="filterSelectBoxes">
+        <div class="fl">FILTERS</div>
+        <div class="bundle">
+          <select>
+            <option value="">Bundles</option>
+            <option value="">Single Styles</option>
+          </select>
+        </div>
+        <div class="country">
+          <select>
+            <option value="">Country Of Origin</option>
+            <option value="">All Countries</option>
+            <option value="">India</option>
+          </select>
+        </div>
+        <div class="size">
+          <select>
+            <option value="">Size</option>
+            <option value="">Small</option>
+            <option value="">Medium</option>
+            <option value="">Large</option>
+          </select>
+        </div>
+        <div class="ProductSelectBy">
+          <select name="sort" id="sortButton">
+            <option value="">Sort by : Recommended</option>
+            <option value="whatsNew">Whats New</option>
+            <option value="popularity">Popularity</option>
+            <option value="discount">Better Discount</option>
+            <option value="desc">Price : High to Low</option>
+            <option value="asc">Price : Low to High</option>
+            <option value="rating">Customer Rating</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="ProductBlock">
+        <div id="ProductFilter">
+          <div id="brandFilter">
+            <br /><br />
+            <span class="Category">CATEGORY</span>
+            <ul id="category">
+              <li>
+                <input type="radio" id="boys" value="10" name="boys" /><span>GIRLS</span>
+              </li>
+              <li>
+                <input type="radio" id="mens" value="20" name="boys" /><span>BOYS </span>
+              </li>
+              <br>
+              <div id="brandname">
+                <span class="filterspan">BRAND</span>
+                <ul id="filterButtonBrand">
+                  <li>
+                    <input type="checkbox" class="bandfiltered" id="Roadster" value="Roadster" name="Roadster" />
+                    <span>GINI</span>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="bandfiltered" id="WROGN" value="WROGN" name="WROGN" />
+                    <span> WROGN </span>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="bandfiltered" id="HRX" value="HRX by Hrithik Roshan"
+                      name="HRX by Hrithik Roshan" />
+                    <span> HRX by Hrithik Roshan </span>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="bandfiltered" id="LouisPhilippeSport" value="Louis Philippe Sport"
+                      name="Louis Philippe Sport" />
+                    <span> Adidas sport </span>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="bandfiltered" id="Puma" value="Puma" name="Puma" />
+                    <span> Puma </span>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="bandfiltered" id="Nike" value="Nike" name="Nike" />
+                    <span> Nike </span>
+                  </li>
+                  <li>
+                    <input type="checkbox" class="bandfiltered" id="Tommy" value="tommy" name="Tommy" />
+                    <span> Tommy Hilfiger </span>
+                  </li>
+                </ul>
+                <br />
+
+              </div>
+              <div id="check-range">
+                <span class="filterspan">PRICE</span>
+                <ul id="filterButtonPrice">
+                  <li> <input type="checkbox" id="174-1881" value="174-1881" name="174-1881" /><span> Rs. 1500
+                      to Rs. 2000 </span></li>
+                  <li>
+                    <input type="checkbox" id="1881-3588" value="1881-3588" name="1881-3588" /><span> Rs.
+                      2000 to Rs. 3000 </span>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="3588-5295" value="3588-5295" name="3588-5295" /><span> Rs.
+                      3000 to Rs. 5000 </span>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="5295-7002" value="5295-7002" name="5295-7002" />
+                    <span> Rs. 5000 to more </span>
+                  </li>
+                </ul>
+                <br>
+              </div>
+              <div id="range">
+                <div>RANGE</div>
+                <input type="range"><br>
+                <p>Rs.0 - Rs.10,000</p>
+              </div>
+              <div id="color">
+                <div id="color-text">COLOR
+                </div>
+                <div id="color-content">
+                  <div id="container"><input type="checkbox">
+                    <div id="yellow"></div>Yellow <span
+                      style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(14547)</span>
+                  </div>
+                  <div id="container"><input type="checkbox">
+                    <div id="pink"></div>PInk<span style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(1138)</span>
+                  </div>
+                  <div id="container"><input type="checkbox">
+                    <div id="black"></div>Black<span style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(10465)</span>
+                  </div>
+                  <div id="container"><input type="checkbox">
+                    <div id="red"></div>Red<span style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(9511)</span>
+                  </div>
+                  <div id="container"><input type="checkbox">
+                    <div id="orange"></div>Orange<span
+                      style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(8769)</span>
+                  </div>
+                  <div id="container"><input type="checkbox">
+                    <div id="green"></div>Green<span style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(7616)</span>
+                  </div>
+                  <div id="container"><input type="checkbox">
+                    <div id="blue"></div>Blue<span style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(7008)</span>
+                  </div>
+                </div>
+                <div id="radio-dis">
+                  <span class="filterspan">DISCOUNT RANGE</span>
+                  <ul id="filterButtonDiscount">
+                    <li>
+                      <input type="radio" id="10" value="10" name="10" /><span> 10% and above </span>
+                    </li>
+                    <li>
+                      <input type="radio" id="20" value="20" name="10" /><span> 20% and above </span>
+                    </li>
+                    <li>
+                      <input type="radio" id="30" value="30" name="10" />
+                      <span> 30% and above </span>
+                    </li>
+                    <li>
+                      <input type="radio" id="40" value="40" name="10" />
+                      <span> 40% and above </span>
+                    </li>
+                    <li>
+                      <input type="radio" id="50" value="50" name="10" />
+                      <span> 50% and above </span>
+                    </li>
+                    <li>
+                      <input type="radio" id="60" value="60" name="10" />
+                      <span> 60% and above </span>
+                    </li>
+                    <li>
+                      <input type="radio" id="70" value="70" name="10" />
+                      <span> 70% and above </span>
+                    </li>
+                    <li>
+                      <input type="radio" id="80" value="80" name="10" />
+                      <span> 80% and above </span>
+                    </li>
+                    <li>
+                      <input type="radio" id="90" value="90" name="10" />
+                      <span> 90% and above </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <br /><br />
+
+          <div id="productGrid">
+            <div id="productGridItems"></div>
+          </div>
+        </div>
+        <hr />
+        <div id="footerBlock"></div>
+      </div>
+    </div>
 </body>
-
 </html>
-  </body>
+</body>
 </html>
