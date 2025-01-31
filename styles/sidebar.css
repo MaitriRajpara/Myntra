@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+}
+
+body {
+  font-size: 15px;
+}
+
+.upper-body {
+  width: 96%;
+  height: 10vh;
+  margin-top: 40px;
+  margin-left: 20px;
+  border-bottom: 1px solid #ccced1;
+}
+
+.upper-body .start {
+  color: #3f4042;
+  line-height: 1;
+}
+
+#si1 {
+  font-weight: 600;
+}
+
+.second-line {
+  color: #282c3f;
+  gap: 2;
+  font-weight: 600;
+  margin-top: 0.5cap;
+}
+
+#si2 {
+  font-weight: 200;
+}
+
+#select-boxes {
+  display: flex;
+  margin-top: 1cap;
+}
+
+.select-boxes {
+  margin: -20px;
+  padding: 0;
+}
+
+.fl {
+  width: 20%;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.bundle {
+  color: #565656;
+  width: 10%;
+  font-weight: 400;
+  margin-left: 8cap;
+}
+
+.bundle>select,
+.country>select,
+.size>select {
+  outline: none;
+  border: 1px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.bundle>select:hover {
+  background-color: #f1efef;
+}
+
+.country>select:hover {
+  background-color: #f1efef;
+}
+
+.size>select:hover {
+  background-color: #f1efef;
+}
+
+.country {
+  color: #282c3f;
+  width: 12%;
+  font-weight: 400;
+}
+
+.size {
+  color: #282c3f;
+  width: 20%;
+  font-weight: 400;
+}
+
+.product-select {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-select select {
+  padding: 9px 14px;
+  color: #7f8082;
+  width: 255px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(70, 71, 72);
+  background-color: white;
+}
+
+.product-select select:hover {
+  background-color: #f1efef;
+}
+
+#product-block {
+  display: flex;
+  margin-left: 17px;
+  width: 17%;
+  border-right: #c8c8cc 1px solid;
+}
+
+.category {
+  margin-top: 3cap;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(227, 228, 230);
+}
+
+#brand-filter li {
+  list-style: none;
+  margin: 8px;
+  gap: 1px;
+  ;
+}
+
+#brand-filter li>span {
+  padding-left: 10px;
+  margin-top: -20px;
+  color: #282c3f;
+  min-height: 1px;
+}
+
+#brand-filter #button-brand {
+  padding-top: 10px;
+}
+
+#productGrid {
+  width: 80%;
+}
+
+#brand-filter #button-discount {
+  margin-top: 10px;
+}
+
+#button-discount li {
+  letter-spacing: 1px;
+}
+
+#products a {
+  text-decoration: none;
+}
+
+#products a>div {
+  margin: 5px;
+  padding: 5px;
+  color: black;
+  line-height: 10px;
+}
+
+#products .brandname {
+  font-weight: 500;
+  line-height: 1;
+  color: #282c3f;
+  margin-bottom: -5px;
+  margin-top: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#products .title {
+  color: #535766;
+  line-height: 3;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  display: block;
+}
+
+#products .price {
+  color: #282c3f;
+  font-weight: 500;
+}
+
+#products .line-through {
+  text-decoration: line-through;
+  color: #7e818c;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+#products .discount {
+  color: #f45272;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+#side-nav #color {
+  width: 260px;
+  height: 315px;
+}
+
+#side-nav #color #color-text {
+  height: 40px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.884);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 105px;
+  margin-top: 10px;
+}
+
+#side-nav #color #color-image {
+  height: 15px;
+  width: 15px;
+  margin-right: -15px;
+}
+
+#color #color-content {
+  height: 243px;
+  width: 260px;
+}
+
+#color #color-content #container {
+  margin-top: 1px;
+  height: 28px;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(0, 0, 0, 0.815);
+}
+
+#color #color-content #container input {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  accent-color: rgb(244, 78, 105);
+}
+
+#color #color-content #container div {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+}
+
+#color #color-content #container #yellow {
+  background-color: yellow;
+}
+
+#color #color-content #container #pink {
+  background-color: pink;
+}
+
+#color #color-content #container #black {
+  background-color: black;
+}
+
+#color #color-content #container #red {
+  background-color: red;
+}
+
+#color #color-content #container #orange {
+  background-color: orange;
+}
+
+#color #color-content #container #green {
+  background-color: green;
+}
+
+#color #color-content #container #blue {
+  background-color: blue;
+}
+
+#color {
+  margin-top: 30px;
+}
+
+#range {
+  margin-top: 10px;
+  color: #f45272;
+  text-align: left;
+}
+
+#check-range {
+  border-bottom: 1px solid lightgray;
+}
+
+#brandname {
+  margin-top: 3cap;
+  border-bottom: 1px solid lightgray;
+}
+
+.filterspan {
+  font-weight: 500;
+}
+
+#range {
+  border-bottom: 1px solid lightgray;
+}

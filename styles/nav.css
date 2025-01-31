@@ -11,6 +11,7 @@ header {
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 
 #logo {
@@ -53,7 +54,7 @@ nav {
   background-color: rgb(231, 228, 228);
   width: 350px;
   line-height: 40px;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .search-bar input {
