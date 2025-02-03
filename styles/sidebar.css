@@ -10,7 +10,7 @@ body {
 
 .upper-body {
   width: 96%;
-  height: 10vh;
+  height: 11vh;
   margin-top: 40px;
   margin-left: 20px;
   border-bottom: 1px solid #ccced1;
@@ -82,13 +82,13 @@ body {
 }
 
 .country {
-  color: #282c3f;
+  color: #5f6063;
   width: 12%;
   font-weight: 400;
 }
 
 .size {
-  color: #282c3f;
+  color: #5f6063;
   width: 20%;
   font-weight: 400;
 }
