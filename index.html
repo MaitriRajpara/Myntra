@@ -1,271 +1,631 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/nav.css">
-  <link rel="stylesheet" href="/styles/sidebar.css">
-  <link rel="stylesheet" href="/styles/items.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <title>Online Store - Myntra</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="/styles/sidebar.css">
+    <link rel="stylesheet" href="/styles/items.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <title>Online Store - Myntra</title>
+  </head>
 
-<body>
-  <header>
-    <nav>
-      <div class="nav-left">
-        <img id="logo" src="Images/logo.jpeg" alt="logo" />
-        <ul class="nav-menu">
-          <li>MEN</li>
-          <li>WOMEN</li>
-          <li>KIDS</li>
-          <li>HOME & LIVING</li>
-          <li>BEAUTY</li>
-          <li class="studio">STUDIO <span>NEW </span></li>
-        </ul>
-      </div>
-      <div class="nav-right">
-        <div class="search-bar">
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <input type="text" placeholder="Search for brands ,products and more" />
+  <body>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <img id="logo" src="Images/logo.jpeg" alt="logo" />
+          <ul class="nav-menu">
+            <li>MEN</li>
+            <li>WOMEN</li>
+            <li>KIDS</li>
+            <li>HOME & LIVING</li>
+            <li>BEAUTY</li>
+            <li class="studio">STUDIO <span>NEW </span></li>
+          </ul>
         </div>
+        <div class="nav-right">
+          <div class="search-bar">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text"
+              placeholder="Search for brands ,products and more" />
+          </div>
 
-        <div>
-          <i class="fa-solid fa-user"></i>
-          <p>Profile</p>
+          <div>
+            <i class="fa-solid fa-user"></i>
+            <p>Profile</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-heart"></i>
+            <p>Wishlist</p>
+          </div>
+          <div>
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            <p>Bag</p>
+          </div>
         </div>
-        <div>
-          <i class="fa-solid fa-heart"></i>
-          <p>Wishlist</p>
-        </div>
-        <div>
-          <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-          <p>Bag</p>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <div id="product-container">
-    <div class="upper-body">
-      <div class="start">Home / ClothingMen / <span id="si1"> T-Shirts</span></div>
-      <div class="second-line">Kids Wear Online Store<span id="si2">- (11944 items)</span></div>
-      <div id="select-boxes">
-        <div class="fl">FILTERS</div>
-        <div class="bundle">
-          <select>
-            <option value>Bundles</option>
-            <option value>Single Styles</option>
-          </select>
-        </div>
-        <div class="country">
-          <select>
-            <option value>Country Of Origin</option>
-            <option value>All Countries</option>
-            <option value>India</option>
-          </select>
-        </div>
-        <div class="size">
-          <select>
-            <option value>Size</option>
-            <option value>Small</option>
-            <option value>Medium</option>
-            <option value>Large</option>
-          </select>
-        </div>
-        <div class="product-select">
-          <select name="sort" id="sortButton">
-            <option value>Sort by : Recommended</option>
-            <option value="whatsNew">Whats New</option>
-            <option value="popularity">Popularity</option>
-            <option value="discount">Better Discount</option>
-            <option value="desc">Price : High to Low</option>
-            <option value="asc">Price : Low to High</option>
-            <option value="rating">Customer Rating</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <div id="lower-body">
-      <div id="product-block">
-        <div id="product-filter">
-          <div id="brand-filter">
-            <div class="category">
-              <ul>
-                <li>
-                  <input type="radio" id="boys" value="10" name="boys" /><span>GIRLS</span>
-                </li>
-                <li>
-                  <input type="radio" id="mens" value="20" name="boys" /><span>BOYS </span>
-                </li>
-            </div>
-            <div id="brandname">
-              <span class="filterspan">BRAND</span>
-              <ul id="button-brand">
-                <li>
-                  <input type="checkbox" id="Roadster" value="Roadster" name="Roadster" />
-                  <span>GINI</span>
-                </li>
-                <li>
-                  <input type="checkbox" id="WROGN" value="WROGN" name="WROGN" />
-                  <span> WROGN </span>
-                </li>
-                <li>
-                  <input type="checkbox" id="HRX" value="HRX by Hrithik Roshan" name="HRX by Hrithik Roshan" />
-                  <span> HRX by Hrithik Roshan </span>
-                </li>
-                <li>
-                  <input type="checkbox" id="LouisPhilippeSport" value="Louis Philippe Sport"
-                    name="Louis Philippe Sport" />
-                  <span> Adidas sport </span>
-                </li>
-                <li>
-                  <input type="checkbox" id="Puma" value="Puma" name="Puma" />
-                  <span> Puma </span>
-                </li>
-                <li>
-                  <input type="checkbox" id="Nike" value="Nike" name="Nike" />
-                  <span> Nike </span>
-                </li>
-                <li>
-                  <input type="checkbox" id="Tommy" value="tommy" name="Tommy" />
-                  <span> Tommy Hilfiger </span>
-                </li>
-              </ul>
-              <br />
-
-            </div>
-            <div id="check-range">
-              <span class="filterspan">PRICE</span>
-              <ul id="button-price">
-                <li> <input type="checkbox" id="174-1881" value="174-1881" name="174-1881" /><span> Rs. 1500
-                    to Rs. 2000 </span></li>
-                <li>
-                  <input type="checkbox" id="1881-3588" value="1881-3588" name="1881-3588" /><span> Rs.
-                    2000 to Rs. 3000 </span>
-                </li>
-                <li>
-                  <input type="checkbox" id="3588-5295" value="3588-5295" name="3588-5295" /><span> Rs.
-                    3000 to Rs. 5000 </span>
-                </li>
-                <li>
-                  <input type="checkbox" id="5295-7002" value="5295-7002" name="5295-7002" />
-                  <span> Rs. 5000 to more </span>
-                </li>
-              </ul>
-              <br>
-            </div>
-            <div id="range">
-              <div>RANGE</div>
-              <input type="range"><br>
-              <p>Rs.0 - Rs.10,000</p>
-            </div>
-            <div id="color">
-              <div id="color-text">COLOR
-              </div>
-              <div id="color-content">
-                <div id="container"><input type="checkbox">
-                  <div id="yellow"></div>Yellow <span
-                    style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(14547)</span>
-                </div>
-                <div id="container"><input type="checkbox">
-                  <div id="pink"></div>PInk<span style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(1138)</span>
-                </div>
-                <div id="container"><input type="checkbox">
-                  <div id="black"></div>Black<span style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(10465)</span>
-                </div>
-                <div id="container"><input type="checkbox">
-                  <div id="red"></div>Red<span style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(9511)</span>
-                </div>
-                <div id="container"><input type="checkbox">
-                  <div id="orange"></div>Orange<span style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(8769)</span>
-                </div>
-                <div id="container"><input type="checkbox">
-                  <div id="green"></div>Green<span style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(7616)</span>
-                </div>
-                <div id="container"><input type="checkbox">
-                  <div id="blue"></div>Blue<span style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(7008)</span>
-                </div>
-              </div>
-              <div id="radio-dis">
-                <span class="filterspan">DISCOUNT RANGE</span>
-                <ul id="button-discount">
-                  <li>
-                    <input type="radio" id="10" value="10" name="10" /><span> 10% and above </span>
-                  </li>
-                  <li>
-                    <input type="radio" id="20" value="20" name="10" /><span> 20% and above </span>
-                  </li>
-                  <li>
-                    <input type="radio" id="30" value="30" name="10" />
-                    <span> 30% and above </span>
-                  </li>
-                  <li>
-                    <input type="radio" id="40" value="40" name="10" />
-                    <span> 40% and above </span>
-                  </li>
-                  <li>
-                    <input type="radio" id="50" value="50" name="10" />
-                    <span> 50% and above </span>
-                  </li>
-                  <li>
-                    <input type="radio" id="60" value="60" name="10" />
-                    <span> 60% and above </span>
-                  </li>
-                  <li>
-                    <input type="radio" id="70" value="70" name="10" />
-                    <span> 70% and above </span>
-                  </li>
-                  <li>
-                    <input type="radio" id="80" value="80" name="10" />
-                    <span> 80% and above </span>
-                  </li>
-                  <li>
-                    <input type="radio" id="90" value="90" name="10" />
-                    <span> 90% and above </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+      </nav>
+    </header>
+    <div id="product-container">
+      <div class="upper-body">
+        <div class="start">Home / ClothingMen / <span id="si1">
+            T-Shirts</span></div>
+        <div class="second-line">Kids Wear Online Store<span id="si2">- (11944
+            items)</span></div>
+        <div id="select-boxes">
+          <div class="fl">FILTERS</div>
+          <div class="bundle">
+            <select>
+              <option value>Bundles</option>
+              <option value>Single Styles</option>
+            </select>
+          </div>
+          <div class="country">
+            <select>
+              <option value>Country Of Origin</option>
+              <option value>All Countries</option>
+              <option value>India</option>
+            </select>
+          </div>
+          <div class="size">
+            <select>
+              <option value>Size</option>
+              <option value>Small</option>
+              <option value>Medium</option>
+              <option value>Large</option>
+            </select>
+          </div>
+          <div class="product-select">
+            <select name="sort" id="sortButton">
+              <option value>Sort by : Recommended</option>
+              <option value="whatsNew">Whats New</option>
+              <option value="popularity">Popularity</option>
+              <option value="discount">Better Discount</option>
+              <option value="desc">Price : High to Low</option>
+              <option value="asc">Price : Low to High</option>
+              <option value="rating">Customer Rating</option>
+            </select>
           </div>
         </div>
       </div>
-    </div>
-    <div id="available-items">
-      <div id="items">
-        <div id="item-image">
-          <img src="./Images/s1.jpeg">
-        </div>
-      </div>
-      <div id="item-content">
-        <p>
-          <span
-            style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
-            &starf; |&nbsp; 122</span>
-          <span
-            style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
-            Emami 7 OILS IN ONE</span>
-          <span
-            style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
-            Organics Rice Hair Oil -200ml</span>
-          <span
-            style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
-            <s style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
-              style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20% OFF)</span></span>
-        </p>
-      </div>
-    </div>
-  </div>
-</body>
+      <div id="lower-body">
+        <div id="product-block">
+          <div id="product-filter">
+            <div id="brand-filter">
+              <div class="category">
+                <ul>
+                  <li>
+                    <input type="radio" id="boys" value="10"
+                      name="boys" /><span>GIRLS</span>
+                  </li>
+                  <li>
+                    <input type="radio" id="mens" value="20"
+                      name="boys" /><span>BOYS </span>
+                  </li>
+                </div>
+                <div id="brandname">
+                  <span class="filterspan">BRAND</span>
+                  <ul id="button-brand">
+                    <li>
+                      <input type="checkbox" id="Roadster" value="Roadster"
+                        name="Roadster" />
+                      <span>GINI</span>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="WROGN" value="WROGN"
+                        name="WROGN" />
+                      <span> WROGN </span>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="HRX"
+                        value="HRX by Hrithik Roshan"
+                        name="HRX by Hrithik Roshan" />
+                      <span> HRX by Hrithik Roshan </span>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="LouisPhilippeSport"
+                        value="Louis Philippe Sport"
+                        name="Louis Philippe Sport" />
+                      <span> Adidas sport </span>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="Puma" value="Puma"
+                        name="Puma" />
+                      <span> Puma </span>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="Nike" value="Nike"
+                        name="Nike" />
+                      <span> Nike </span>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="Tommy" value="tommy"
+                        name="Tommy" />
+                      <span> Tommy Hilfiger </span>
+                    </li>
+                  </ul>
+                  <br />
 
-</html>
-</body>
+                </div>
+                <div id="check-range">
+                  <span class="filterspan">PRICE</span>
+                  <ul id="button-price">
+                    <li> <input type="checkbox" id="174-1881" value="174-1881"
+                        name="174-1881" /><span> Rs. 1500
+                        to Rs. 2000 </span></li>
+                    <li>
+                      <input type="checkbox" id="1881-3588" value="1881-3588"
+                        name="1881-3588" /><span> Rs.
+                        2000 to Rs. 3000 </span>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="3588-5295" value="3588-5295"
+                        name="3588-5295" /><span> Rs.
+                        3000 to Rs. 5000 </span>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="5295-7002" value="5295-7002"
+                        name="5295-7002" />
+                      <span> Rs. 5000 to more </span>
+                    </li>
+                  </ul>
+                  <br>
+                </div>
+                <div id="range">
+                  <div>RANGE</div>
+                  <input type="range"><br>
+                  <p>Rs.0 - Rs.10,000</p>
+                </div>
+                <div id="color">
+                  <div id="color-text">COLOR
+                  </div>
+                  <div id="color-content">
+                    <div id="container"><input type="checkbox">
+                      <div id="yellow"></div>Yellow <span
+                        style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(14547)</span>
+                    </div>
+                    <div id="container"><input type="checkbox">
+                      <div id="pink"></div>PInk<span
+                        style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(1138)</span>
+                    </div>
+                    <div id="container"><input type="checkbox">
+                      <div id="black"></div>Black<span
+                        style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(10465)</span>
+                    </div>
+                    <div id="container"><input type="checkbox">
+                      <div id="red"></div>Red<span
+                        style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(9511)</span>
+                    </div>
+                    <div id="container"><input type="checkbox">
+                      <div id="orange"></div>Orange<span
+                        style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(8769)</span>
+                    </div>
+                    <div id="container"><input type="checkbox">
+                      <div id="green"></div>Green<span
+                        style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(7616)</span>
+                    </div>
+                    <div id="container"><input type="checkbox">
+                      <div id="blue"></div>Blue<span
+                        style="font-size: 11px;color: rgba(0, 0, 0, 0.391);">(7008)</span>
+                    </div>
+                  </div>
+                  <div id="radio-dis">
+                    <span class="filterspan">DISCOUNT RANGE</span>
+                    <ul id="button-discount">
+                      <li>
+                        <input type="radio" id="10" value="10"
+                          name="10" /><span> 10% and above </span>
+                      </li>
+                      <li>
+                        <input type="radio" id="20" value="20"
+                          name="10" /><span> 20% and above </span>
+                      </li>
+                      <li>
+                        <input type="radio" id="30" value="30" name="10" />
+                        <span> 30% and above </span>
+                      </li>
+                      <li>
+                        <input type="radio" id="40" value="40" name="10" />
+                        <span> 40% and above </span>
+                      </li>
+                      <li>
+                        <input type="radio" id="50" value="50" name="10" />
+                        <span> 50% and above </span>
+                      </li>
+                      <li>
+                        <input type="radio" id="60" value="60" name="10" />
+                        <span> 60% and above </span>
+                      </li>
+                      <li>
+                        <input type="radio" id="70" value="70" name="10" />
+                        <span> 70% and above </span>
+                      </li>
+                      <li>
+                        <input type="radio" id="80" value="80" name="10" />
+                        <span> 80% and above </span>
+                      </li>
+                      <li>
+                        <input type="radio" id="90" value="90" name="10" />
+                        <span> 90% and above </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="available-items">
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s1.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s2.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s3.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s4.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s5.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s6.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s7.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s8.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s16.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s11.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s17.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s20.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s18.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s19.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+            <div id="items">
+              <div id="item-image">
+                <img src="./Images/s15.jpeg">
+              </div>
+              <div id="item-content">
+                <p>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
+                    &starf; |&nbsp; 122</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
+                    Pantaloons Kids</span>
+                  <span
+                    style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
+                    Kids Shorts</span>
+                  <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 10px; font-weight: 800;color: rgba(0, 0, 0, 0.795);">Rs.220
+                    <s
+                      style="font-weight: 200; color: rgba(0, 0, 0, 0.733);">Rs.275</s>&nbsp;<span
+                      style="font-weight: 400; font-size: 11px; color: rgba(255, 166, 0, 0.74);">(20%
+                      OFF)</span></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </body>
 
-</html>
+      </html>
+    </body>
+  </html>
