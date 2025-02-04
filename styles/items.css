@@ -42,7 +42,7 @@
   height: 100px;
 }
 
-#lower-body {
+.lower-body {
   display: flex;
 }
 
