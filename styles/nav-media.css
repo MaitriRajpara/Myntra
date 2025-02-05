@@ -120,13 +120,22 @@
     }
 }
 
-@media only screen and (min-width: 1101px) {
+@media only screen and (max-width: 1501px) {
     .nav-left i {
         display: none;
     }
 
     .button {
         display: none;
+    }
+
+    .product-block{
+        display: none;
+    }
+
+    #available-items {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 2cap;
     }
 }
 
