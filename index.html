@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/nav.css">
     <link rel="stylesheet" href="/styles/sidebar.css">
     <link rel="stylesheet" href="/styles/items.css">
+    <link rel="stylesheet" href="./styles/nav-media.css">
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -23,33 +24,34 @@
     <header>
       <nav>
         <div class="nav-left">
-          <img id="logo" src="images/logo.jpeg" alt="logo" />
+          <img class="logo" id="logo" src="images/logo.jpeg" alt="logo" />
           <ul class="nav-menu">
-            <li>MEN</li>
-            <li>WOMEN</li>
-            <li>KIDS</li>
-            <li>HOME & LIVING</li>
-            <li>BEAUTY</li>
-            <li class="studio">STUDIO <span>NEW </span></li>
+            <li tabindex="0">MEN</li>
+            <li tabindex="0">WOMEN</li>
+            <li tabindex="0">KIDS</li>
+            <li tabindex="0">HOME & LIVING</li>
+            <li tabindex="0">BEAUTY</li>
+            <li class="studio" tabindex="0">STUDIO <span>NEW </span></li>
           </ul>
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
         <div class="nav-right">
           <div class="search-bar">
-            <i class="fa fa-search" aria-hidden="true"></i>
+            <i class="fa fa-search" aria-hidden="true" tabindex="0"></i>
             <input type="text"
               placeholder="Search for brands ,products and more" />
           </div>
 
           <div>
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-user" tabindex="0"></i>
             <p>Profile</p>
           </div>
           <div>
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart" tabindex="0"></i>
             <p>Wishlist</p>
           </div>
           <div>
-            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            <i class="fa fa-shopping-bag" aria-hidden="true" tabindex="0"></i>
             <p>Bag</p>
           </div>
         </div>
@@ -57,26 +59,26 @@
     </header>
     <div id="product-container">
       <div class="upper-body">
-        <div class="start">Home / ClothingMen / <span id="si1">
-            T-Shirts</span></div>
+        <div class="start">Home / ClothingKids / <span id="si1">
+            Shorts</span></div>
         <div class="second-line">Kids Wear Online Store<span id="si2">- (11944
             items)</span></div>
         <div id="select-boxes">
           <div class="fl">FILTERS</div>
-          <div class="bundle">
+          <div class="bundle" tabindex="0">
             <select>
               <option value>Bundles</option>
               <option value>Single Styles</option>
             </select>
           </div>
-          <div class="country">
+          <div class="country" tabindex="0">
             <select>
               <option value>Country Of Origin</option>
               <option value>All Countries</option>
               <option value>India</option>
             </select>
           </div>
-          <div class="size">
+          <div class="size" tabindex="0">
             <select>
               <option value>Size</option>
               <option value>Small</option>
@@ -84,7 +86,7 @@
               <option value>Large</option>
             </select>
           </div>
-          <div class="product-select">
+          <div class="product-select" tabindex="0">
             <select name="sort" id="sortButton">
               <option value>Sort by : Recommended</option>
               <option value="whatsNew">Whats New</option>
@@ -97,11 +99,11 @@
           </div>
         </div>
       </div>
-      <div id="lower-body">
-        <div id="product-block">
+      <div class="lower-body">
+        <div class="product-block">
           <div id="product-filter">
             <div id="brand-filter">
-              <div class="category">
+              <div class="category" >
                 <ul>
                   <li>
                     <input type="radio" id="boys" value="10"
@@ -264,7 +266,7 @@
             </div>
           </div>
           <div id="available-items">
-            <div id="items">
+            <div id="items" tabindex="0">
               <div id="item-image">
                 <img src="./images/s1.jpeg">
               </div>
@@ -272,10 +274,10 @@
                 <p>
                   <span
                     style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
-                    &starf; |&nbsp; 122</span>
+                    &starf; |&nbsp; 122</span><br>
                   <span
                     style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
-                    Pantaloons Kids</span>
+                    Pantaloons Kids</span><br>
                   <span
                     style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
                     Kids Shorts</span><br>
@@ -296,10 +298,10 @@
                 <p>
                   <span
                     style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
-                    &starf; |&nbsp; 122</span>
+                    &starf; |&nbsp; 122</span><br>
                   <span
                     style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
-                    Pantaloons Kids</span>
+                    Pantaloons Kids</span><br>
                   <span
                     style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
                     Kids Shorts</span><br>
@@ -320,10 +322,10 @@
                 <p>
                   <span
                     style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
-                    &starf; |&nbsp; 122</span>
+                    &starf; |&nbsp; 122</span><br>
                   <span
                     style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
-                    Pantaloons Kids</span>
+                    Pantaloons Kids</span><br>
                   <span
                     style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
                     Kids Shorts</span><br>
@@ -344,10 +346,10 @@
                 <p>
                   <span
                     style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; margin-left: 10px; color: rgba(0, 0, 0, 0.822);">4.3
-                    &starf; |&nbsp; 122</span>
+                    &starf; |&nbsp; 122</span><br>
                   <span
                     style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.836); margin-left: 10px;">
-                    Pantaloons Kids</span>
+                    Pantaloons Kids</span><br>
                   <span
                     style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;margin-left: 10px;color: rgba(0, 0, 0, 0.61);">
                     Kids Shorts</span><br>
@@ -624,11 +626,6 @@
               </div>
             </div>
           </div>
-      <div>
-        
       </div>
-        </body>
-
-      </html>
     </body>
   </html>
