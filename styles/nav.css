@@ -43,6 +43,12 @@ nav {
   font-weight: 600;
   color: rgb(55, 53, 53);
   font-size: 13px;
+  border-bottom: 3px solid #fff;
+
+}
+
+.nav-menu li:hover{
+  border-bottom: 3px solid rgb(243, 96, 121);
 }
 
 .nav-right {
