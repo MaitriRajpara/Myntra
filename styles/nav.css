@@ -44,6 +44,7 @@ nav {
   color: rgb(55, 53, 53);
   font-size: 13px;
   border-bottom: 3px solid #fff;
+  cursor: pointer;
 
 }
 
@@ -68,6 +69,7 @@ nav {
   border: 0;
   outline: none;
   width: 80%;
+  cursor: pointer;
 }
 
 .search-bar i {
@@ -80,6 +82,7 @@ nav {
 .nav-right div {
   margin: 0 12px;
   text-align: center;
+  cursor: pointer;
 }
 
 .nav-right div p {
