@@ -67,6 +67,7 @@ body {
   padding: 10px;
   border-radius: 20px;
   background-color: white;
+  cursor: pointer;
 }
 
 .bundle>select:hover {
@@ -107,6 +108,7 @@ body {
   outline: none;
   border: 1px solid rgb(70, 71, 72);
   background-color: white;
+  cursor: pointer;
 }
 
 .product-select select:hover {
@@ -130,7 +132,6 @@ body {
   list-style: none;
   margin: 8px;
   gap: 1px;
-  ;
 }
 
 #brand-filter li>span {
